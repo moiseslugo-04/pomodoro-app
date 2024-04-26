@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  background-color: #120a53d7;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+main {
+  max-width: 80%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section:first-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+main section p {
+  margin-top: 10px;
+  color: #255f3e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section input {
+  padding: 12px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #2e8b56b0;
+  outline: none;
+  transition: all 0.3s ease-in;
+  color: #2e8b56b0;
+}
+section input:focus {
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 8px;
+  color: #27ad61;
+  border-color: #27ad61;
+}
+main section:first-child button {
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #2e8b56b0;
+  border: none;
+  background-color: #03311775;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+main section:first-child button:hover {
+  background-color: #033117;
+  color: #27ad61;
+}
+section button:hover {
+  opacity: 1;
+}
+main section:last-child {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-columns: 200px;
+  gap: 10px;
+  padding: 50px 20px;
+}
+main section .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  text-align: center;
+}
+main section .buttons button {
+  max-width: 130px;
+  width: 130px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  opacity: 0.9;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: all 0.2s ease-in;
+}
+main section .buttons .btn-start button:hover {
+  color: #000;
+  background-color: #23d671;
+}
+main section .buttons .btn-delete:hover {
+  color: #000;
+  background-color: #f10707f6;
+}
+main section .task-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section .task {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 3px solid #2e8b57;
+  color: #2e8b57;
+  border-radius: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+main section .task:hover {
+  opacity: 1;
+  border-color: #9343e4;
+  color: #0aec6c;
+}
